@@ -1,0 +1,1072 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta name="description" content="Rumah.Lobster — bibit, paket indukan, dan lobster air tawar konsumsi dari Depok. Pesan langsung via WhatsApp.">
+<title>Rumah.Lobster | Bibit, Indukan & Lobster Air Tawar</title>
+<link rel="icon" type="image/webp" href="assets/7b477891.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: immersive full-bleed water hero → marquee → story → size ruler (real cm/inch) → shoppable catalog with a WhatsApp order builder → steps → contact. Brand look from Rumah.Lobster's print kit. */
+:root{
+  --paper:#F7F1E8; --paper-2:#EFE4D6; --card:#FFFDF9;
+  --ink:#2B211B; --muted:#5E4D41; --line:#DCCBB8;
+  --brown:#5B2C17; --brown-deep:#3B1C0F; --red:#B0161B; --red-hover:#8C1015;
+  --wa:#1E7A45; --wa-hover:#16603A; --cream-on-dark:#F7F1E8; --soft-on-dark:#E8D6C2;
+  --script:'Kaushan Script','Brush Script MT',cursive;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Jost','Avenir Next','Segoe UI',sans-serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:24px}
+.logo{height:auto}
+.kicker{display:inline-flex;align-items:center;gap:14px;font-size:13px;font-weight:500;letter-spacing:.3em;text-transform:uppercase}
+.kicker::after{content:"";width:48px;height:2px;background:var(--red)}
+h1,h2{font-family:var(--script);font-weight:400;color:var(--brown);margin:0;line-height:1.02;text-wrap:balance}
+h2{font-size:clamp(44px,6vw,76px)}
+.sub{font-family:var(--script);color:var(--brown);font-size:clamp(22px,2.6vw,30px);margin:6px 0 0}
+section{padding-block:clamp(72px,9vw,120px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:500;font-size:16px;text-decoration:none;border:1.5px solid transparent;transition:background .15s,color .15s,border-color .15s,transform .15s;cursor:pointer;background:none}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-hover)}
+.btn-line{border-color:var(--brown);color:var(--brown)}
+.btn-line:hover{background:var(--brown);color:var(--paper)}
+.btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
+.num{font-variant-numeric:lining-nums tabular-nums}
+
+/* reveal (visible at rest; only animates when JS marks it) */
+.reveal{transition:opacity .7s ease,transform .7s ease}
+.js .reveal.pre{opacity:.001;transform:translateY(18px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.js .reveal.pre{opacity:1;transform:none}}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.nav .logo{width:190px}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--muted);padding-block:6px}
+.nav ul a:hover{color:var(--red)}
+.cart-pill{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:999px;background:var(--brown);color:var(--paper);text-decoration:none;font-size:15px;font-weight:500}
+.cart-pill:hover{background:var(--brown-deep)}
+.cart-pill .count{min-width:22px;height:22px;padding:0 6px;border-radius:11px;background:var(--red);color:#fff;font-size:13px;display:inline-flex;align-items:center;justify-content:center}
+.cart-pill svg{width:18px;height:18px}
+@media (max-width:900px){.nav ul{display:none}.nav .logo{width:150px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:0;background:#E9DFCF;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:70% 55%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--paper) 0%,rgba(247,241,232,.92) 30%,rgba(247,241,232,.35) 55%,rgba(247,241,232,0) 72%)}
+.caustics{position:absolute;inset:-20%;z-index:-1;pointer-events:none;opacity:.35;mix-blend-mode:soft-light;
+  background:
+    radial-gradient(closest-side,rgba(255,255,255,.9),transparent) 0 0/220px 160px,
+    radial-gradient(closest-side,rgba(255,255,255,.7),transparent) 110px 80px/260px 190px;
+  animation:drift 18s linear infinite}
+@keyframes drift{from{transform:translate3d(0,0,0) rotate(0deg)}to{transform:translate3d(-220px,-160px,0) rotate(2deg)}}
+.hero .wrap{min-height:660px;display:flex;align-items:center}
+.hero-copy{max-width:560px;padding-block:80px 72px}
+.hero h1{font-size:clamp(68px,10.5vw,142px);line-height:.92}
+.hero .swash{width:min(320px,60%);height:3px;background:var(--brown);border-radius:2px;margin:16px 0 0 22%}
+.hero .tag{font-family:var(--script);font-size:clamp(26px,3vw,38px);color:var(--brown);margin:16px 0 0}
+.hero .lead{margin:14px 0 0;font-size:18px;max-width:42ch;color:var(--ink)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .cta .btn-line{background:rgba(247,241,232,.7)}
+.from{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;padding-top:20px;border-top:1px solid rgba(91,44,23,.25)}
+.from div{display:flex;flex-direction:column}
+.from span{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.from strong{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--brown);line-height:1.15}
+@media (max-width:760px){
+  .hero{display:flex;flex-direction:column-reverse;background:var(--paper)}
+  .hero::before,.caustics{display:none}
+  .hero-bg{position:relative;inset:auto;height:300px;z-index:0}
+  .hero-bg img{object-position:55% 60%;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 22%);mask-image:linear-gradient(to bottom,transparent 0,#000 22%)}
+  .hero .wrap{min-height:0;width:100%}
+  .hero-copy{padding-block:36px 8px}
+  .item img{aspect-ratio:16/9}
+}
+
+/* marquee */
+.marquee{background:var(--brown);color:var(--cream-on-dark);overflow:hidden;padding-block:14px;border-block:1px solid var(--brown-deep)}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:slide 38s linear infinite;font-family:var(--script);font-size:28px;white-space:nowrap}
+.marquee-track span{display:inline-flex;align-items:center;gap:48px}
+.marquee-track span::after{content:"";width:8px;height:8px;border-radius:50%;background:#F2A6A8}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,88px);align-items:center}
+.about-photo{position:relative}
+.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px}
+.stamp{position:absolute;right:-18px;bottom:28px;background:var(--red);color:#fff;border-radius:50%;width:132px;height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transform:rotate(-8deg);box-shadow:0 10px 30px rgba(59,28,15,.25)}
+.stamp b{font-family:var(--script);font-weight:400;font-size:26px;line-height:1}
+.stamp small{font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-top:4px}
+.about-copy{display:flex;flex-direction:column;gap:18px;min-width:0}
+.about-copy p{margin:0;max-width:60ch}
+.visi{margin-top:10px;padding-top:24px;border-top:1px solid var(--line)}
+.visi .label{font-size:13px;font-weight:500;letter-spacing:.3em;color:var(--red)}
+.visi blockquote{margin:8px 0 0;font-family:var(--serif);font-size:clamp(24px,2.6vw,31px);line-height:1.3;font-weight:500}
+.misi{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;margin:20px 0 0;padding:0;list-style:none}
+.misi li{display:flex;gap:12px;align-items:baseline;font-size:15.5px;color:var(--muted)}
+.misi li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--red);transform:translateY(-2px)}
+@media (max-width:860px){.about .wrap{grid-template-columns:1fr}.about-photo img{aspect-ratio:4/3}.misi{grid-template-columns:1fr}.stamp{right:12px;width:112px;height:112px}}
+
+/* ruler */
+.sizes{background:var(--brown-deep);color:var(--cream-on-dark)}
+.sizes h2{color:var(--cream-on-dark)}
+.sizes .sub{color:var(--soft-on-dark)}
+.sizes .kicker::after{background:#F2A6A8}
+.size-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px}
+.size-head p{max-width:40ch;margin:0;color:var(--soft-on-dark);font-size:16px}
+.size-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.size-tabs button{min-height:44px;padding:8px 18px;border-radius:999px;border:1.5px solid rgba(247,241,232,.35);background:transparent;color:var(--cream-on-dark);cursor:pointer;font-size:15px}
+.size-tabs button:hover{border-color:var(--cream-on-dark)}
+.size-tabs button[aria-pressed="true"]{background:var(--cream-on-dark);color:var(--brown-deep);border-color:var(--cream-on-dark)}
+.ruler-box{margin-top:28px}
+.ruler{position:relative;height:130px;margin-inline:12px}
+.ruler .bar{position:absolute;left:0;top:28px;height:34px;border-radius:0 17px 17px 0;background:linear-gradient(90deg,#3E6E7E,#5E8FA0);transition:width .5s cubic-bezier(.2,.8,.2,1);display:flex;align-items:center;justify-content:flex-end;padding-right:12px;font-weight:600;color:#fff;font-size:15px;white-space:nowrap}
+.ruler .scale{position:absolute;left:0;right:0;top:76px;height:40px;border-top:2px solid var(--soft-on-dark);
+  background:
+    repeating-linear-gradient(90deg,var(--soft-on-dark) 0 2px,transparent 2px calc(100%/12)) top left/100% 18px no-repeat,
+    repeating-linear-gradient(90deg,rgba(232,214,194,.55) 0 1px,transparent 1px calc(100%/24)) top left/100% 9px no-repeat}
+.ruler .labels{position:absolute;left:0;right:0;top:100px;height:20px;font-size:13px;color:var(--soft-on-dark)}
+.ruler .labels span{position:absolute;transform:translateX(-50%)}
+.size-meta{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:12px;align-items:baseline}
+.size-meta .big{font-family:var(--serif);font-weight:700;font-size:44px;line-height:1}
+.size-meta .cm{color:var(--soft-on-dark)}
+.size-meta .use{color:var(--soft-on-dark)}
+.size-meta a{color:#F2C9C1}
+
+/* catalog */
+.catalog{background:var(--paper-2)}
+.cat-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 40px;margin-bottom:28px}
+.cat-head .note{max-width:40ch;margin:0;font-size:15px;color:var(--muted)}
+.cat-layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:32px;align-items:start}
+@media (max-width:1000px){.cat-layout{grid-template-columns:1fr}}
+.tabs{display:flex;gap:6px;padding:6px;background:var(--card);border:1px solid var(--line);border-radius:999px;width:max-content;max-width:100%;overflow-x:auto;margin-bottom:24px}
+.tabs button{min-height:44px;padding:8px 22px;border:0;border-radius:999px;background:transparent;cursor:pointer;font-size:16px;font-weight:500;color:var(--muted);white-space:nowrap}
+.tabs button[aria-selected="true"]{background:var(--brown);color:var(--paper)}
+.panel-intro{display:flex;gap:20px;align-items:center;margin-bottom:20px}
+.panel-intro img{width:120px;height:90px;object-fit:cover;border-radius:6px;flex:none}
+.panel-intro p{margin:0;color:var(--muted);font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:6px;transition:border-color .15s,box-shadow .15s}
+.item.in{border-color:var(--brown);box-shadow:0 0 0 1px var(--brown)}
+.item img{width:100%;aspect-ratio:4/3;object-fit:contain;mix-blend-mode:multiply;margin-bottom:6px}
+.item .k{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.item h3{margin:0;font-family:var(--serif);font-weight:700;font-size:28px;line-height:1.1;color:var(--brown)}
+.item .d{font-size:15px;color:var(--muted)}
+.item .p{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;margin-top:auto;padding-top:8px}
+.item .p small{font-family:var(--sans);font-weight:400;font-size:14px;color:var(--muted)}
+.stepper{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px;border:1px solid var(--line);border-radius:999px;padding:4px}
+.stepper button{width:40px;height:40px;border-radius:50%;border:0;background:var(--paper-2);cursor:pointer;font-size:20px;line-height:1;display:flex;align-items:center;justify-content:center}
+.stepper button:hover{background:var(--line)}
+.stepper button:disabled{opacity:.35;cursor:default}
+.stepper output{font-weight:600;min-width:64px;text-align:center;white-space:nowrap}
+.add{margin-top:10px;width:100%;min-height:48px;border-radius:999px;border:1.5px solid var(--brown);background:transparent;color:var(--brown);cursor:pointer;font-weight:500}
+.add:hover{background:var(--brown);color:var(--paper)}
+.disclaimer{margin:24px 0 0;font-family:var(--serif);font-style:italic;font-size:17px;color:var(--muted)}
+
+/* order summary */
+.order{position:sticky;top:calc(84px + env(safe-area-inset-top,0px));background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.order-head{background:var(--brown);color:var(--paper);padding:18px 22px}
+.order-head h3{margin:0;font-family:var(--script);font-weight:400;font-size:32px;line-height:1.1}
+.order-head p{margin:2px 0 0;font-size:14px;color:var(--soft-on-dark)}
+.order-body{padding:18px 22px 22px;display:flex;flex-direction:column;gap:14px}
+.order-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.order-list li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.order-list .q{color:var(--muted);font-size:14px}
+.order-list .rm{width:32px;height:32px;border:0;border-radius:50%;background:transparent;cursor:pointer;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.order-list .rm:hover{background:var(--paper-2);color:var(--red)}
+.order-list .rm svg{width:16px;height:16px}
+.empty{color:var(--muted);font-size:15px;margin:0;padding:8px 0}
+.total{display:flex;justify-content:space-between;align-items:baseline;padding-top:4px}
+.total span{font-size:14px;color:var(--muted)}
+.total strong{font-family:var(--serif);font-size:34px;color:var(--red)}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:14px;font-weight:500}
+.field input{min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);font:inherit;font-size:16px;color:var(--ink)}
+.field input:focus{outline:2px solid var(--brown);outline-offset:1px}
+.order .fine{font-size:13px;color:var(--muted);margin:0}
+.order .clear{align-self:flex-start;border:0;background:none;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:14px;padding:4px 0}
+
+/* mobile bottom bar */
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:40px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:10px;position:relative}
+.steps li::before{content:"0" counter(s);font-family:var(--serif);font-weight:700;font-size:60px;line-height:1;color:var(--red)}
+.steps h3{margin:0;font-family:var(--serif);font-size:25px;font-weight:700}
+.steps p{margin:0;color:var(--muted);font-size:16px}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* contact */
+.kontak{background:var(--brown);color:var(--cream-on-dark)}
+.kontak h2{color:var(--cream-on-dark)}
+.kontak .sub{color:var(--soft-on-dark)}
+.kontak .kicker::after{background:#F2A6A8}
+.kontak-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr) minmax(0,.9fr);gap:40px;margin-top:48px}
+.kontak h3{margin:0 0 16px;font-family:var(--serif);font-weight:700;font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:#F2D9C4}
+.phone{font-family:var(--serif);font-weight:700;font-size:clamp(34px,4vw,46px);line-height:1.1;user-select:all}
+.phone-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.kontak .btn-line{border-color:var(--soft-on-dark);color:var(--cream-on-dark)}
+.kontak .btn-line:hover{background:var(--cream-on-dark);color:var(--brown)}
+.addr{margin-top:24px;font-family:var(--serif);font-size:22px;line-height:1.35}
+.addr a{font-family:var(--sans);font-size:15px;color:#F2D9C4;display:inline-block;margin-top:8px}
+.channels{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.channels a{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid rgba(247,241,232,.18);text-decoration:none;min-height:56px}
+.channels li:last-child a{border-bottom:0}
+.channels img{width:36px;height:36px;border-radius:9px;flex:none}
+.channels .n{font-weight:500;display:block;line-height:1.2}
+.channels .h{font-size:14px;color:var(--soft-on-dark);display:block;overflow-wrap:anywhere}
+.channels a:hover .n{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:960px){.kontak-grid{grid-template-columns:1fr 1fr}.kontak-grid>div:first-child{grid-column:1/-1}}
+@media (max-width:620px){.kontak-grid{grid-template-columns:1fr}}
+footer{background:var(--brown-deep);color:var(--soft-on-dark);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px;padding-block:22px}
+footer .sig{font-family:var(--script);font-size:22px;color:var(--cream-on-dark)}
+.toast{position:fixed;left:50%;bottom:calc(92px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:999px;font-size:15px;z-index:60;max-width:calc(100% - 32px)}
+
+/* ===== refinements: item structure, bottom bar, bottom sheet ===== */
+.item .body{display:flex;flex-direction:column;gap:6px;flex:1}
+.item .actions{display:flex;flex-direction:column}
+.oh-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.sheet-close{display:none}
+.sheet-backdrop{position:fixed;inset:0;background:rgba(43,33,27,.55);z-index:45}
+body.lock{overflow:hidden}
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:40;display:none;gap:6px;padding:5px;background:var(--brown-deep);border-radius:999px;box-shadow:0 10px 30px rgba(59,28,15,.35)}
+.mbar-order{flex:1;display:flex;align-items:center;gap:12px;min-height:52px;padding:0 16px;border:0;background:transparent;color:var(--paper);text-align:left;cursor:pointer;border-radius:999px;min-width:0;transition:background .2s}
+.mbar-order svg{width:22px;height:22px;flex:none}
+.mbar-text{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.mbar-text strong{font-size:15px;font-weight:600}
+.mbar-text span{font-size:13px;color:var(--soft-on-dark);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar.filled .mbar-order{background:var(--red)}
+.mbar.filled .mbar-text span{color:#FBE3E0}
+.mbar-wa{display:inline-flex;align-items:center;gap:6px;min-height:52px;padding:0 18px;border-radius:999px;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;flex:none}
+.mbar-wa svg{width:20px;height:20px}
+.mbar-wa:hover{background:var(--wa-hover)}
+@media (max-width:1000px){
+  .mbar{display:flex}
+  body{padding-bottom:88px}
+  .order{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:50;max-height:88%;overflow-y:auto;overscroll-behavior:contain;border:0;border-radius:20px 20px 0 0;box-shadow:0 -12px 40px rgba(0,0,0,.25);padding-bottom:env(safe-area-inset-bottom,0px);transform:translateY(105%);visibility:hidden;transition:transform .32s cubic-bezier(.2,.8,.2,1),visibility 0s linear .32s}
+  .order.open{transform:none;visibility:visible;transition:transform .32s cubic-bezier(.2,.8,.2,1),visibility 0s}
+  .order-head{position:sticky;top:0;z-index:1;padding-top:26px}
+  .order-head::before{content:"";position:absolute;top:9px;left:50%;width:44px;height:5px;margin-left:-22px;border-radius:3px;background:rgba(247,241,232,.4)}
+  .sheet-close{display:flex;width:44px;height:44px;flex:none;border-radius:50%;border:0;background:rgba(247,241,232,.14);color:var(--paper);align-items:center;justify-content:center;cursor:pointer}
+  .sheet-close svg{width:20px;height:20px}
+  .cart-pill{display:none}
+}
+
+/* ===== mobile (≤760px) ===== */
+@media (max-width:760px){
+  body{font-size:16px}
+  section{padding-block:56px}
+  h2{font-size:clamp(40px,11.5vw,54px)}
+  .sub{font-size:22px}
+  .kicker{font-size:12px;letter-spacing:.24em}
+  .nav .wrap{padding-block:12px;justify-content:center}
+  .nav .logo{width:168px}
+
+  .hero{flex-direction:column}
+  .hero-bg{height:300px}
+  .hero-bg img{object-position:58% 62%;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 38%);mask-image:linear-gradient(to top,transparent 0,#000 38%)}
+  .hero-copy{padding-block:0 44px;margin-top:-72px;position:relative;z-index:1}
+  .hero h1{font-size:clamp(60px,18.5vw,86px)}
+  .hero .swash{margin-left:28%}
+  .hero .tag{font-size:27px;margin-top:12px}
+  .hero .lead{font-size:16px}
+  .hero .cta{flex-direction:column;align-items:stretch;gap:10px;margin-top:24px}
+  .hero .cta .btn{width:100%;min-height:52px}
+  .from{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:24px;padding-top:0;border-top:0}
+  .from div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 10px 8px}
+  .from span{font-size:10px;letter-spacing:.12em}
+  .from strong{font-size:18px}
+
+  .marquee{padding-block:10px}
+  .marquee-track{font-size:22px;gap:32px}
+  .marquee-track span{gap:32px}
+
+  .about .wrap{gap:36px}
+  .stamp{width:96px;height:96px;right:12px;bottom:-24px}
+  .stamp b{font-size:19px}
+  .stamp small{font-size:9px}
+  .visi blockquote{font-size:23px}
+
+  .size-head{gap:14px}
+  .size-head p{font-size:15px}
+  .size-tabs{flex-wrap:nowrap;overflow-x:auto;margin:28px -24px 0;padding:2px 24px;scrollbar-width:none}
+  .size-tabs::-webkit-scrollbar{display:none}
+  .size-tabs button{flex:none}
+  .ruler{height:124px}
+  .ruler .labels span:nth-child(even){display:none}
+  .size-meta{flex-direction:column;gap:4px}
+  .size-meta .big{font-size:38px}
+
+  .cat-head{margin-bottom:18px}
+  .cat-head .note{font-size:14px}
+  .tabs{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:4px}
+  .tabs button{padding:8px 4px;font-size:15px}
+  .long{display:none}
+  .panel-intro{gap:14px;margin-bottom:14px}
+  .panel-intro img{width:76px;height:60px}
+  .panel-intro p{font-size:14px;line-height:1.45}
+  .grid{grid-template-columns:1fr;gap:12px}
+  .item{display:grid;grid-template-columns:92px minmax(0,1fr);gap:0 14px;padding:14px;align-items:start}
+  .item img{width:92px;height:92px;aspect-ratio:auto;margin:0;border-radius:8px}
+  .item .body{gap:1px;min-width:0}
+  .item .k{font-size:10.5px;letter-spacing:.14em}
+  .item h3{font-size:23px}
+  .item .d{font-size:13.5px;line-height:1.4}
+  .item .p{font-size:23px;padding-top:4px}
+  .item .actions{grid-column:1/-1;flex-direction:row;gap:10px;margin-top:12px}
+  .item .stepper{margin:0;flex:1 1 0;padding:3px;min-width:0}
+  .item .stepper button{width:44px;height:44px}
+  .item .stepper output{min-width:0;font-size:14px;white-space:nowrap}
+  .item .stepper{gap:2px}
+  .toast{bottom:auto;top:calc(76px + env(safe-area-inset-top,0px))}
+  .item .add{margin:0;flex:1 1 0;min-height:52px;background:var(--brown);color:var(--paper);border-color:var(--brown)}
+  .item.in .add{background:var(--card);color:var(--brown)}
+  .disclaimer{font-size:15px}
+
+  .steps{grid-template-columns:1fr;gap:0;margin-top:28px}
+  .steps li{background:none;border:0;border-left:2px solid var(--line);border-radius:0;padding:0 0 28px 34px;margin-left:21px;gap:4px}
+  .steps li:last-child{border-left-color:transparent;padding-bottom:0}
+  .steps li::before{position:absolute;left:-22px;top:-4px;width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;font-size:19px;display:flex;align-items:center;justify-content:center}
+  .steps h3{font-size:22px}
+  .steps p{font-size:15px}
+
+  .kontak-grid{gap:36px;margin-top:32px}
+  .phone-row .btn{flex:1 1 0;padding-inline:12px}
+  .addr{font-size:19px}
+  footer .wrap{flex-direction:column;align-items:flex-start;padding-block:20px 24px}
+}
+
+/* ===== polish round ===== */
+.nav ul a.on{color:var(--brown);box-shadow:inset 0 -2px 0 var(--red)}
+.item img,.panel-intro img{-webkit-mask-image:radial-gradient(closest-side,#000 78%,transparent 100%);mask-image:radial-gradient(closest-side,#000 78%,transparent 100%)}
+.panel-intro img{object-fit:cover;border-radius:50%;width:84px;height:84px}
+@keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.18)}100%{transform:scale(1)}}
+#navCount.bump{animation:bump .45s ease}
+@keyframes bumpbar{0%{transform:translateY(0)}35%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+.mbar.bump{animation:bumpbar .45s ease}
+/* water-edge on dark bands */
+.sizes,.kontak{position:relative}
+.sizes::before,.kontak::before{content:"";position:absolute;left:0;right:0;top:-23px;height:24px;background:inherit;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 24' preserveAspectRatio='none'%3E%3Cpath d='M0 24V14C15 4 25 4 40 12S65 22 80 12 105 2 120 12V24z'/%3E%3C/svg%3E") 0 0/240px 24px repeat-x;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 24' preserveAspectRatio='none'%3E%3Cpath d='M0 24V14C15 4 25 4 40 12S65 22 80 12 105 2 120 12V24z'/%3E%3C/svg%3E") 0 0/240px 24px repeat-x}
+/* need chooser */
+.need{padding-block:clamp(56px,7vw,96px) clamp(24px,3vw,40px)}
+.need-head{display:flex;flex-direction:column;gap:12px;margin-bottom:32px}
+.need-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.need-card{position:relative;display:flex;flex-direction:column;gap:4px;padding:24px 24px 22px;background:var(--card);border:1px solid var(--line);border-radius:14px;text-decoration:none;overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
+.need-card:hover{transform:translateY(-3px);border-color:var(--brown);box-shadow:0 14px 30px rgba(59,28,15,.12)}
+.need-card img{width:120px;height:120px;object-fit:cover;border-radius:50%;margin-bottom:14px;-webkit-mask-image:none;mask-image:none}
+.need-k{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);font-weight:500}
+.need-t{font-family:var(--serif);font-weight:700;font-size:30px;line-height:1.1;color:var(--brown)}
+.need-d{font-size:15px;color:var(--muted);flex:1}
+.need-go{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-weight:500;color:var(--brown)}
+.need-go svg{width:18px;height:18px;transition:transform .2s}
+.need-card:hover .need-go svg{transform:translateX(4px)}
+.need + .about{padding-top:clamp(56px,7vw,96px)}
+/* step icons */
+.steps li::before{position:absolute;top:24px;right:26px;font-size:44px;opacity:.9}
+.sico{width:52px;height:52px;border-radius:50%;background:var(--paper-2);color:var(--brown);display:flex;align-items:center;justify-content:center}
+.sico svg{width:26px;height:26px}
+@media (max-width:760px){
+  .need-grid{grid-template-columns:1fr;gap:10px}
+  .need-card{display:grid;grid-template-columns:72px minmax(0,1fr);column-gap:16px;row-gap:2px;padding:16px;align-items:center}
+  .need-card img{grid-row:1/span 4;width:72px;height:72px;margin:0;align-self:start}
+  .need-t{font-size:23px}
+  .need-d{font-size:14px}
+  .need-go{margin-top:4px;font-size:15px}
+  .need-head{margin-bottom:20px}
+  .sico{display:none}
+  .steps li::before{top:-4px;right:auto;font-size:19px;opacity:1}
+  .sizes::before,.kontak::before{top:-15px;height:16px;-webkit-mask-size:160px 16px;mask-size:160px 16px}
+}
+@media (prefers-reduced-motion:reduce){.need-card:hover{transform:none}}
+
+/* Updated photographic assets and transparent identity */
+.nav .wrap>a:first-child{display:block;width:250px;height:56px;overflow:hidden;flex:none}
+.nav .logo{width:250px;max-width:none;height:auto;transform:translateY(-13px)}
+.hero-bg img{object-position:70% 50%}
+.need-card img{width:calc(100% + 48px);max-width:none;height:210px;margin:-24px -24px 20px;object-fit:cover;border-radius:0}
+.about-photo img{border-radius:22px;object-position:center 65%;box-shadow:0 18px 50px rgba(91,44,23,.12)}
+.item img,.panel-intro img{-webkit-mask-image:none;mask-image:none}
+.item img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;background:var(--paper)}
+.item img.cutout{object-fit:contain;padding:10px;background:radial-gradient(ellipse at center,#fffdf9,var(--paper-2))}
+.panel-intro img{width:100px;height:80px;object-fit:cover;border-radius:10px}
+@media(max-width:900px){.nav .wrap>a:first-child{width:220px;height:48px}.nav .logo{width:220px;transform:translateY(-12px)}}
+@media(max-width:760px){
+ .hero-bg{height:300px}.hero-bg img{object-position:77% 50%}
+ .hero-copy{margin-top:-30px}
+ .need-card img{width:88px;height:88px;margin:0;max-width:100%;border-radius:10px;grid-row:1/span 4;object-fit:cover}
+ .need-card{grid-template-columns:88px minmax(0,1fr)}
+ .about-photo img{aspect-ratio:4/3;object-position:center 67%}
+ .item img{aspect-ratio:4/3}
+}
+
+/* Rumah.Lobster — editorial interactive edition */
+:root{--paper:#F7F1E8;--paper-2:#EFE4D6;--card:#FFFDF9;--ink:#2B211B;--muted:#5E4D41;--brown:#5B2C17;--brown-deep:#3B1C0F;--line:#DCCBB8;--red:#B0161B;--script:'Cormorant Garamond',Georgia,serif;--serif:'Cormorant Garamond',Georgia,serif}
+body{font-size:17px}h1,h2{font-family:var(--serif);font-weight:600;letter-spacing:-.035em}h2{font-size:clamp(44px,5.5vw,76px);line-height:1.02}h2 em,h1 em{font-weight:500;color:#967259}.kicker{font-size:11px;letter-spacing:.22em}.kicker::after{width:30px}.btn{border-radius:6px}.btn-wa{background:var(--brown)}.btn-wa:hover{background:var(--brown-deep)}
+.nav{background:rgba(247,241,232,.94)}.scroll-progress{position:absolute;bottom:-1px;height:2px;background:var(--red);width:0}.nav ul{gap:24px}.menu-toggle{display:none}.hero{background:var(--paper);min-height:720px}.hero .wrap{min-height:720px;position:relative}.hero-copy{max-width:560px;padding-block:70px;z-index:2}.hero h1{font-size:clamp(66px,6.8vw,100px);line-height:.97;margin-top:22px}.hero-eyebrow{font-size:11px;letter-spacing:.24em;color:var(--muted)}.hero .tag{font-family:var(--sans);font-size:16px;font-weight:500;margin-top:25px}.hero .lead{font-size:16px;max-width:36ch;color:var(--muted)}.hero .cta{margin-top:24px}.hero-bg{left:35%;top:60px;bottom:70px;right:-4%;z-index:0}.hero-bg img{object-fit:contain;object-position:center;mix-blend-mode:multiply;transition:opacity .2s,transform .5s}.hero-bg.swapping img{opacity:0;transform:translateY(12px)}.hero::before{display:none}.hero-switch{display:flex;gap:4px;margin-top:28px;border-bottom:1px solid var(--line);width:max-content;max-width:100%;flex-wrap:wrap}.hero-switch button{border:0;background:none;padding:10px 15px;font-size:13px;cursor:pointer;border-bottom:2px solid transparent;color:var(--muted)}.hero-switch button.active{color:var(--brown);border-bottom-color:var(--brown);font-weight:600}.from{margin-top:20px;border:0;padding:0;gap:24px}.from span{font-size:9px;letter-spacing:.14em}.from strong{font-size:24px}.marquee{padding-block:10px}.marquee-track{font-family:var(--sans);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.need{padding-top:90px}.need-grid{gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.need-card{background:transparent;border:0;border-right:1px solid var(--line);border-radius:0;padding:30px;gap:9px}.need-card:last-child{border-right:0}.need-card:hover{transform:none;box-shadow:none;background:#EFE4D6}.need-card img{margin:0 0 18px;width:100%;height:230px;object-fit:contain;transition:transform .35s;mix-blend-mode:multiply}.need-card:hover img{transform:translateY(-6px) rotate(-2deg)}.need-t{font-size:36px}.need-go{font-size:13px}.need-k{font-size:10px;color:var(--muted)}.about-photo{background:radial-gradient(ellipse,#F7F1E8,#EFE4D6);border-radius:0;padding:36px 20px}.about-photo img{box-shadow:none;border-radius:0;object-fit:contain;aspect-ratio:4/5;cursor:zoom-in;mix-blend-mode:multiply}.photo-caption{font-size:10px;letter-spacing:.18em;text-align:center;color:var(--muted);padding-bottom:15px}.about-copy{gap:24px}.visi blockquote{font-size:26px}.misi{font-size:14px}
+.sizes{background:#EFE4D6;color:var(--ink)}.sizes h2{color:var(--brown)}.sizes .sub,.size-head p,.size-meta .use,.size-meta .cm{color:var(--muted)}.sizes::before,.kontak::before{display:none}.size-visual{height:280px;position:relative;margin-top:30px;border-bottom:1px solid #CDB59B;display:flex;align-items:center;justify-content:center;overflow:hidden}.size-guide{position:absolute;top:15px;left:0;display:flex;flex-direction:column;z-index:1}.size-guide span{font-size:10px;letter-spacing:.12em}.size-guide strong{font-family:var(--serif);font-size:42px;color:var(--brown)}#sizeAnimal{width:110px;max-width:70%;height:220px;object-fit:contain;transition:width .5s;mix-blend-mode:multiply}.size-end{position:absolute;bottom:12px;right:0;font-size:11px;color:var(--muted)}.slider-label{display:flex;justify-content:space-between;font-size:13px;margin-top:25px;gap:12px}#sizeSlider{width:100%;accent-color:var(--brown);margin:18px 0 0;cursor:pointer}.size-tabs{margin-top:22px}.size-tabs button{color:var(--brown);border-color:#B79777;font-size:13px}.size-tabs button[aria-pressed=true]{background:var(--brown);color:white;border-color:var(--brown)}.ruler-box{display:none}.size-meta{padding-top:20px;border-top:1px solid #CDB59B;margin-top:25px}.size-meta a{color:var(--brown)}
+.catalog{background:var(--paper)}.tabs{border-radius:6px;padding:4px;background:#EFE4D6}.tabs button{border-radius:4px;font-size:14px}.cat-layout{grid-template-columns:minmax(0,1fr) 330px;gap:40px}.item{border-radius:0;padding:20px;border:0;border-bottom:1px solid var(--line);background:transparent;gap:12px}.grid{gap:14px}.item img,.item img.cutout{background:radial-gradient(ellipse,#EFE4D6,#F7F1E8);object-fit:contain;padding:16px;aspect-ratio:4/3;border-radius:0;cursor:zoom-in;transition:transform .25s}.item img:hover{transform:scale(1.035)}.item h3{font-size:32px}.item .k{letter-spacing:.12em;font-size:10px}.item.in{box-shadow:none;border-bottom:2px solid var(--brown)}.item .add{border-radius:5px;background:var(--brown)}.stepper{border-radius:5px}.panel-intro img{object-fit:contain;background:#EFE4D6;border-radius:0}.order{border-radius:8px;box-shadow:0 12px 40px #3B1C0F0c}.order-head{background:var(--brown)}.steps li{border:0;background:transparent;border-top:1px solid var(--line);border-radius:0;padding:30px 0}.steps li::before{right:0;color:#AA8C70}.sico{background:#EFE4D6}.kontak{background:var(--brown-deep)}.kontak h2{font-size:clamp(44px,5vw,70px)}footer{background:#3B1C0F}.sig{font-family:var(--sans)!important}.zoom-dialog{border:0;padding:0;width:min(880px,92vw);background:var(--paper);border-radius:10px;color:var(--ink)}.zoom-dialog::backdrop{background:#2B211BCC;backdrop-filter:blur(6px)}.zoom-dialog img{width:100%;height:min(65vh,600px);object-fit:contain;padding:30px}.zoom-close{position:absolute;right:12px;top:12px;border:1px solid var(--line);background:var(--paper);border-radius:50%;width:44px;height:44px;cursor:pointer;font-size:24px}.zoom-caption{padding:0 25px 25px;font-size:14px;text-align:center}
+@media(max-width:1000px){.cat-layout{grid-template-columns:1fr}.hero-bg{left:38%;right:-10%}.hero h1{font-size:80px}.hero-copy{max-width:480px}.order{border-radius:20px 20px 0 0}.need-card{padding:22px}.need-card img{height:180px}}
+@media(max-width:760px){.nav .wrap{justify-content:space-between}.nav .wrap>a:first-child{width:190px;height:44px}.nav .logo{width:190px;transform:translateY(-9px)}.menu-toggle{display:flex;gap:12px;align-items:center;background:none;border:0;min-height:44px;font-size:13px}.nav nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);padding:16px 24px;border-bottom:1px solid var(--line)}.nav nav.open{display:block}.nav ul{display:flex;flex-direction:column;gap:4px}.nav ul a{display:block;padding:10px 0}.hero{min-height:0;display:block}.hero-bg{position:relative;left:auto;right:auto;top:auto;bottom:auto;height:290px;margin:0 16px;z-index:0}.hero-bg img{mask-image:none;-webkit-mask-image:none;object-position:center;object-fit:contain}.hero .wrap{min-height:0}.hero-copy{margin-top:0;padding:24px 0 46px;max-width:none}.hero h1{font-size:clamp(60px,16vw,78px);margin-top:14px}.hero .tag{font-size:14px}.hero .lead{max-width:none}.hero .cta{flex-direction:row}.hero .cta .btn{width:auto;flex:1;font-size:13px;padding:10px}.hero-switch{width:100%;justify-content:space-between}.hero-switch button{padding:10px}.from{gap:12px}.from div{background:transparent;border:0;padding:0}.from strong{font-size:21px}.need{padding-top:50px}.need-grid{gap:0}.need-card{padding:22px 0;border-right:0;border-bottom:1px solid var(--line);grid-template-columns:110px minmax(0,1fr);column-gap:18px}.need-card:last-child{border-bottom:0}.need-card img{width:110px;height:110px;margin:0}.need-t{font-size:29px}.need-d{font-size:13px}.need-go{font-size:12px}.about-photo{padding:16px}.about-photo img{aspect-ratio:4/3}.size-visual{height:230px}#sizeAnimal{height:180px}.size-guide strong{font-size:35px}.size-guide span{font-size:8px}.size-end{font-size:9px}.size-meta .big{font-size:35px}.steps li{padding:20px 0 20px 40px}.steps li::before{right:auto;color:white}.item{padding:12px 0}.item img{padding:14px}.panel-intro{gap:14px}.kontak .phone-row .btn{font-size:13px}}
+@media(prefers-reduced-motion:reduce){#sizeAnimal,.hero-bg img,.need-card img,.item img{transition:none}.need-card:hover img,.item img:hover{transform:none}}
+
+/* Explicit contrast for numeric and order controls in every interaction state */
+.item .add{background:var(--brown);color:var(--paper);border-color:var(--brown)}
+.item .add:hover,.item .add:focus-visible,.item .add:active{background:var(--brown-deep);color:var(--paper);border-color:var(--brown-deep)}
+.item.in .add{background:var(--card);color:var(--brown);border-color:var(--brown)}
+.item.in .add:hover,.item.in .add:focus-visible,.item.in .add:active{background:var(--brown);color:var(--paper);border-color:var(--brown)}
+.size-tabs button{background:var(--paper);color:var(--brown);border-color:#B79777}
+.size-tabs button:hover,.size-tabs button:focus-visible{background:var(--paper-2);color:var(--brown-deep);border-color:var(--brown)}
+.size-tabs button[aria-pressed="true"],.size-tabs button[aria-pressed="true"]:hover,.size-tabs button[aria-pressed="true"]:focus-visible{background:var(--brown);color:var(--paper);border-color:var(--brown)}
+.stepper button{color:var(--ink);background:var(--paper-2)}
+.stepper button:not(:disabled):hover,.stepper button:not(:disabled):focus-visible{background:var(--brown);color:var(--paper)}
+.stepper output,.stepper output:hover,.stepper output:focus{background:transparent;color:var(--ink)}
+.tabs button:hover,.tabs button:focus-visible{background:var(--paper-2);color:var(--brown)}
+.tabs button[aria-selected="true"],.tabs button[aria-selected="true"]:hover,.tabs button[aria-selected="true"]:focus-visible{background:var(--brown);color:var(--paper)}
+
+/* ===== FGD UI/UX fixes v5 ===== */
+/* 1. Hover bug: hero outline button turned cream-on-cream (text vanished) */
+.hero .cta .btn-line:hover,.hero .cta .btn-line:focus-visible{background:var(--brown);color:var(--paper);border-color:var(--brown)}
+/* 2. Dark contact band: brown button on dark brown was invisible on hover */
+.kontak .btn-wa{background:var(--paper);color:var(--brown-deep);border-color:var(--paper)}
+.kontak .btn-wa:hover,.kontak .btn-wa:focus-visible{background:#fff;color:var(--brown-deep)}
+.kontak .btn-line:hover,.kontak .btn-line:focus-visible{background:var(--paper);color:var(--brown-deep);border-color:var(--paper)}
+/* every button: explicit, readable hover/focus */
+.btn-wa:hover,.btn-wa:focus-visible{color:#fff}
+.btn-line:focus-visible{background:var(--brown);color:var(--paper)}
+#sendWa[aria-disabled="true"]{opacity:1;background:var(--line);color:var(--muted);border-color:var(--line)}
+
+/* 3. Type scale: one consistent ramp, sized to its container */
+h1,h2{letter-spacing:-.015em}
+h2{font-size:clamp(34px,4vw,54px);line-height:1.08}
+.kontak h2{font-size:clamp(34px,4vw,54px)}
+.hero h1{font-size:clamp(52px,5.4vw,80px);line-height:1}
+.hero .tag{font-size:17px}
+.from{gap:16px 28px}
+.from strong{font-size:20px;white-space:nowrap}
+.need-t{font-size:28px}
+.need-d{font-size:15px}
+.visi blockquote{font-size:24px}
+.size-guide strong{font-size:34px}
+.size-meta .big{font-size:34px}
+.item h3{font-size:24px;line-height:1.15}
+.item .p{font-size:22px;white-space:nowrap}
+.item .p small{font-size:13px}
+.item .add{font-size:14px;line-height:1.25;padding:8px 12px;text-wrap:balance}
+.stepper output{font-size:15px}
+.order-head h3{font-size:26px}
+.total strong{font-size:28px}
+.phone{font-size:clamp(28px,3vw,36px)}
+.steps li::before{font-size:32px}
+.steps h3{font-size:22px}
+.kontak h3{font-size:15px;letter-spacing:.16em}
+section{padding-block:clamp(56px,7vw,96px)}
+
+/* 4. Hero: photo no longer runs under the headline */
+.hero-bg{left:46%;right:0}
+.hero-bg img{-webkit-mask-image:radial-gradient(ellipse 62% 60% at 58% 50%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 62% 60% at 58% 50%,#000 62%,transparent 100%)}
+.hero-copy{max-width:520px}
+
+/* 5. Catalog cards: content sits inside one clear box */
+.grid{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;gap:8px}
+.item.in{border:1px solid var(--brown);box-shadow:0 0 0 1px var(--brown)}
+.item img,.item img.cutout{border-radius:6px;padding:10px;margin:0}
+.item .body{gap:4px}
+.item .d{font-size:14px;line-height:1.45}
+.stepper button{width:36px;height:36px}
+
+@media(max-width:1000px){.hero h1{font-size:64px}}
+@media(max-width:760px){
+  h2,.kontak h2{font-size:clamp(32px,9vw,42px)}
+  .hero h1{font-size:clamp(46px,13vw,60px)}
+  .hero .tag{font-size:15px}
+  .hero-bg{left:auto;right:auto}
+  .hero-bg img{-webkit-mask-image:none;mask-image:none}
+  .from{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .from strong{font-size:15px;white-space:normal;overflow-wrap:anywhere}
+  .from span{font-size:9px}
+  .need-t{font-size:24px}
+  .item{display:grid;padding:12px;gap:0 14px}
+  .item img,.item img.cutout{padding:6px}
+  .item h3{font-size:21px}
+  .item .p{font-size:19px}
+  .item .add{font-size:15px}
+  .stepper button,.item .stepper button{width:40px;height:40px}
+  .steps li{padding:4px 0 24px 40px;border-top:0}
+  .steps li::before{top:0;left:-21px;width:40px;height:40px;font-size:17px}
+  .phone{font-size:30px}
+  .total strong{font-size:24px}
+}
+
+/* ===== Tiga langkah pesan — rebuilt ===== */
+ol.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:36px 0 0;padding:0}
+ol.steps li{position:relative;display:grid;grid-template-columns:52px minmax(0,1fr);grid-template-areas:"ico num" "t t" "p p";align-items:center;column-gap:14px;row-gap:8px;margin:0;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+ol.steps li::before{grid-area:num;position:static;justify-self:end;align-self:center;width:auto;height:auto;background:none;border-radius:0;font-family:var(--serif);font-weight:700;font-size:30px;line-height:1;color:#AA8C70;opacity:1;display:block}
+ol.steps .sico{grid-area:ico;display:flex}
+ol.steps h3{grid-area:t;margin:12px 0 0;font-size:22px;line-height:1.2;color:var(--brown)}
+ol.steps p{grid-area:p;margin:0;font-size:15px;line-height:1.55;color:var(--muted)}
+@media(max-width:860px){
+  ol.steps{grid-template-columns:1fr;gap:0;margin-top:28px}
+  ol.steps li{grid-template-columns:40px minmax(0,1fr);grid-template-areas:"num t" ". p";align-items:start;column-gap:16px;row-gap:4px;padding:0 0 26px;background:none;border:0;border-radius:0;margin:0}
+  ol.steps li:last-child{padding-bottom:0}
+  ol.steps li::before{justify-self:start;width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;font-size:17px;display:flex;align-items:center;justify-content:center}
+  ol.steps li::after{content:"";position:absolute;left:19px;top:46px;bottom:6px;width:2px;background:var(--line)}
+  ol.steps li:last-child::after{display:none}
+  ol.steps .sico{display:none}
+  ol.steps h3{margin:8px 0 0;font-size:20px}
+}
+
+/* ===== Language switch ===== */
+.nav-right{display:flex;align-items:center;gap:12px}
+.lang-switch{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+.lang-switch button{min-width:40px;min-height:36px;padding:0 10px;border:0;border-radius:999px;background:transparent;color:var(--muted);font-size:13px;font-weight:600;letter-spacing:.06em;cursor:pointer}
+.lang-switch button:hover,.lang-switch button:focus-visible{color:var(--brown);background:var(--paper-2)}
+.lang-switch button[aria-pressed="true"],.lang-switch button[aria-pressed="true"]:hover{background:var(--brown);color:var(--paper)}
+@media(max-width:760px){.nav-right{gap:6px}.lang-switch button{min-width:36px;min-height:32px;padding:0 8px;font-size:12px}.nav .wrap>a:first-child{width:160px;height:40px}.nav .logo{width:160px;transform:translateY(-8px)}.menu-toggle{font-size:13px;gap:6px}}
+</style>
+<script>
+/* ===== Bahasa: ID / EN ===== */
+(function(){
+var EN={
+'Rumah.Lobster | Bibit, Indukan & Lobster Air Tawar':'Rumah.Lobster | Freshwater Crayfish: Juveniles, Broodstock & Table-size',
+'Menu':'Menu','Tentang':'About','Panduan Ukuran':'Size Guide','Katalog':'Catalog','Cara Pesan':'How to Order','Kontak':'Contact','Pesanan':'Order',
+'RUMAH.LOBSTER / DEPOK':'RUMAH.LOBSTER / DEPOK, INDONESIA',
+'Dari kecil.':'Small start.','Jadi pilihan.':'Smart choice.',
+'Lobster air tawar, dari bibit hingga konsumsi.':'Freshwater crayfish, from juveniles to the table.',
+'Bibit, paket indukan, dan lobster konsumsi dari Depok. Pilih ukurannya, susun pesanan, lalu kirim langsung ke WhatsApp kami.':'Juveniles, broodstock packs and table-size crayfish from Depok. Pick a size, build your order, then send it straight to our WhatsApp.',
+'Susun pesanan':'Build your order','Panduan ukuran':'Size guide',
+'Semua':'All','Bibit':'Juveniles','Indukan':'Broodstock','Konsumsi':'Table-size',
+'Bibit mulai':'Juveniles from','Paket indukan':'Broodstock packs',
+'Gudangnya Lobster Air Tawar':'Your Freshwater Crayfish Source',
+'Mulai dari kebutuhan':'Start with your need','Mulai dari tujuan Anda.':'Start with your goal.',
+'Pemeliharaan':'Raising','2 cm, 3 cm, dan 2 inch. Mulai Rp2.000/ekor.':'2 cm, 3 cm and 2 inch. From Rp2.000 each.','Lihat bibit':'See juveniles',
+'Pengembangan budidaya':'Breeding','Paket Indukan':'Broodstock Packs','Komposisi jantan dan betina, 3 inch atau 4 inch. Mulai Rp100.000/paket.':'Male and female sets, 3 or 4 inch. From Rp100.000 per pack.','Lihat paket':'See packs',
+'Lobster Konsumsi':'Table-size Crayfish','Jantan 4 inch, Rp200.000/kg.':'4-inch males, Rp200.000/kg.','Lihat konsumsi':'See table-size',
+'SATU TEMPAT. TIGA KEBUTUHAN.':'ONE PLACE. THREE NEEDS.','Tentang kami':'About us','Kenali dulu.':'Know them first.','Pilih dengan tepat.':'Choose with confidence.',
+'Rumah.Lobster menyediakan lobster air tawar dalam pilihan bibit, paket indukan, dan ukuran konsumsi. Ragam produk disusun untuk membantu pelanggan memilih sesuai kebutuhan pemeliharaan, pengembangan budidaya, maupun konsumsi.':'Rumah.Lobster supplies freshwater crayfish as juveniles, broodstock packs and table-size animals. The range is organised to help customers choose for raising, breeding or eating.',
+'Melalui kanal media sosial dan marketplace, pelanggan dapat mengenal pilihan produk serta mengonfirmasi ukuran, komposisi paket, harga, dan ketersediaan sebelum memesan.':'Through our social media and marketplace channels, customers can get to know the products and confirm size, pack contents, price and availability before ordering.',
+'VISI':'VISION','Menjadi pilihan tepercaya untuk kebutuhan lobster air tawar, dari bibit hingga konsumsi.':'To be the trusted choice for freshwater crayfish, from juveniles to the table.',
+'Memudahkan pemilihan produk sesuai kebutuhan pelanggan.':'Make it easy to choose the right product for each need.',
+'Menyajikan informasi ukuran dan komposisi paket dengan jelas.':'Show sizes and pack contents clearly.',
+'Mengembangkan akses pemesanan melalui kanal digital.':'Grow access to ordering through digital channels.',
+'Membangun hubungan pelanggan melalui komunikasi yang terbuka.':'Build customer relationships through open communication.',
+'Ukuran kecil.':'Small sizes.','Perbedaan besar.':'Big difference.','Bandingkan ukuran sebelum memilih.':'Compare sizes before you choose.',
+'Ukuran kami ditulis dalam cm dan inch. Pilih salah satu untuk melihat panjangnya pada penggaris, skala sebenarnya 1 inch = 2,54 cm.':'Our sizes are listed in cm and inches. Pick one to see its length; 1 inch = 2.54 cm.',
+'ILUSTRASI PERBANDINGAN':'SIZE COMPARISON','Panjang tubuh ditampilkan secara relatif':'Body length shown to relative scale','Geser untuk membandingkan ukuran':'Slide to compare sizes',
+'Pilihan Anda.':'Your choice.','Pesanan Anda.':'Your order.',
+'Tambahkan produk, lalu kirim daftar pesanan ke WhatsApp. Harga mengacu pada katalog; stok dan ongkir kami konfirmasi lewat chat.':'Add products, then send your order list to WhatsApp. Prices follow the catalog; we confirm stock and shipping by chat.',
+'Gambar produk merupakan ilustrasi. Ukuran, warna, dan jumlah mengikuti pilihan katalog. Bibit ukuran random.':'Product images are illustrations. Size, colour and quantity follow the catalog option. Juveniles come in mixed sizes.',
+'Pesanan Anda':'Your order','Dikirim sebagai pesan WhatsApp ke 085183134469':'Sent as a WhatsApp message to +62 851 8313 4469',
+'Belum ada produk. Pilih dari katalog, lalu tekan':'No products yet. Pick from the catalog, then press','Tambah':'Add',
+'Estimasi harga katalog':'Estimated catalog price','Nama':'Name','Kota pengiriman':'Delivery city','Kirim pesanan via WhatsApp':'Send order via WhatsApp',
+'Belum termasuk ongkos kirim. Harga, stok, dan pengiriman dikonfirmasi admin sebelum pembayaran.':'Shipping not included. Our admin confirms price, stock and delivery before payment.',
+'Kosongkan pesanan':'Clear order','Cara memesan':'How to order','Tiga langkah pesan':'Order in three steps',
+'Pilih produk':'Choose products','Tentukan bibit, paket indukan, atau lobster konsumsi beserta ukurannya di katalog.':'Pick juveniles, a broodstock pack or table-size crayfish, and the size, in the catalog.',
+'Konfirmasi':'Confirm','Kirim daftar pesanan ke WhatsApp. Admin mengonfirmasi harga, stok, dan pengiriman.':'Send your order list to WhatsApp. Our admin confirms price, stock and delivery.',
+'Selesaikan pesanan':'Complete the order','Selesaikan pembayaran di Tokopedia atau Shopee pilihan Anda.':'Pay through Tokopedia or Shopee, whichever you prefer.',
+'Terhubung dengan Rumah.Lobster':'Get in touch with Rumah.Lobster','Kenali produknya. Pilih sesuai kebutuhan.':'Know the product. Choose what fits.',
+'Telepon & WhatsApp':'Phone & WhatsApp','Chat WhatsApp':'Chat on WhatsApp','Salin nomor':'Copy number','Buka di Google Maps →':'Open in Google Maps →',
+'Media sosial':'Social media','Gudangnya Lobster Air Tawar · Bibit · Indukan · Konsumsi · Kota Depok':'Your Freshwater Crayfish Source · Juveniles · Broodstock · Table-size · Depok, Indonesia',
+'Pesanan kosong':'Order is empty','Pilih produk di katalog':'Pick from the catalog','Chat':'Chat',
+/* attributes */
+'Close-up lobster air tawar dengan capit biru berbintik':'Close-up of a freshwater crayfish with speckled blue claws','Contoh: Bekasi':'e.g. Jakarta','Daftar pesanan':'Order list','Detail gambar lobster':'Crayfish image detail','Harga mulai':'Starting prices','Ilustrasi ukuran lobster':'Crayfish size illustration','Jelajahi pilihan lobster':'Browse crayfish options','Kategori produk':'Product categories','Lobster air tawar bercapit biru di dasar air jernih':'Blue-clawed freshwater crayfish on a clear-water bed','Misi':'Mission','Nama Anda':'Your name','Navigasi utama':'Main navigation','Penggaris 0 sampai 12 cm':'Ruler from 0 to 12 cm','Pilih ukuran':'Choose a size','Pilihan ukuran lobster':'Crayfish size options','Rumah.Lobster — Gudangnya Lobster Air Tawar':'Rumah.Lobster — Your Freshwater Crayfish Source','Rumah.Lobster, kembali ke atas':'Rumah.Lobster, back to top','Tutup daftar pesanan':'Close order list','Tutup detail gambar':'Close image detail',
+/* dynamic */
+'Bibit · random':'Juvenile · mixed size','Paket 3 inch':'3-inch pack','Paket 4 inch':'4-inch pack','Satuan 4 inch':'Single · 4 inch','Konsumsi · 4 inch':'Table-size · 4 inch',
+'5 ekor':'5 pcs','10 ekor':'10 pcs','Jantan':'Male','Betina':'Female','ekor':'pcs','paket':'pack','kg':'kg',
+'Bibit ukuran kecil untuk pemeliharaan dan pembesaran.':'Small juveniles for raising and grow-out.','Bibit ukuran kecil, sedikit lebih besar.':'Small juveniles, a little larger.','Bibit ukuran 2 inch (± 5 cm).':'2-inch juveniles (± 5 cm).',
+'1 jantan + 4 betina':'1 male + 4 females','2 jantan + 8 betina':'2 males + 8 females','Indukan satuan ukuran 4 inch.':'Single 4-inch broodstock.','Lobster air tawar untuk kebutuhan konsumsi.':'Freshwater crayfish for the table.',
+'Bibit lobster air tawar ukuran kecil, dijual per ekor dengan ukuran random. Cocok untuk memulai pemeliharaan.':'Small freshwater crayfish juveniles, sold per piece in mixed sizes. A good way to start raising.',
+'Paket indukan dengan komposisi jantan dan betina, ukuran 3 inch atau 4 inch. Tersedia juga indukan satuan 4 inch.':'Broodstock packs with males and females, 3 or 4 inch. Single 4-inch broodstock also available.',
+'Lobster jantan ukuran 4 inch untuk konsumsi, dijual per kilogram.':'4-inch male crayfish for the table, sold per kilogram.',
+'Kurangi jumlah':'Decrease quantity','Tambah jumlah':'Increase quantity','Tambah lagi · ':'Add more · ',' di pesanan':' in order',' ke pesanan':' to order','ditambahkan':'added',
+'Produk dihapus dari pesanan':'Product removed from order','Pesanan dikosongkan':'Order cleared','Nomor disalin':'Number copied','Nomor terpilih, salin dari layar':'Number selected, copy it from the screen',
+'Hapus':'Remove','produk di pesanan':'products in order','lihat & kirim':'view & send',
+'Halo Rumah.Lobster, saya mau pesan:':'Hello Rumah.Lobster, I would like to order:','Estimasi total:':'Estimated total:','(harga katalog, belum ongkir)':'(catalog price, shipping not included)','Kirim ke:':'Ship to:','Mohon konfirmasi stok dan ongkos kirimnya. Terima kasih.':'Please confirm stock and shipping cost. Thank you.','Halo Rumah.Lobster':'Hello Rumah.Lobster','Halo Rumah.Lobster, saya mau tanya stok lobster.':'Hello Rumah.Lobster, I would like to ask about crayfish stock.',
+'Tersedia sebagai bibit, Rp2.000/ekor.':'Available as juveniles, Rp2.000 each.','Tersedia sebagai bibit, Rp3.000/ekor.':'Available as juveniles, Rp3.000 each.','Tersedia sebagai bibit, Rp5.000/ekor.':'Available as juveniles, Rp5.000 each.','Ukuran paket indukan, mulai Rp100.000/paket.':'Broodstock pack size, from Rp100.000 per pack.','Paket indukan, satuan Rp35.000/ekor, dan konsumsi Rp200.000/kg.':'Broodstock packs, singles at Rp35.000 each, and table-size at Rp200.000/kg.',
+'Lihat di katalog':'See in catalog','Penggaris:':'Ruler:','kira-kira':'about','dari 12 cm':'of 12 cm',
+'Bibit — awal kecil untuk pemeliharaan Anda.':'Juveniles — a small start for your tanks.','Indukan — pilihan untuk pengembangan budidaya.':'Broodstock — for growing your breeding.','Konsumsi — lobster air tawar untuk kebutuhan Anda.':'Table-size — freshwater crayfish for your kitchen.',
+'Ilustrasi produk':'Product illustration','Perbesar gambar':'Enlarge image','Bahasa':'Language','Kota Depok':'Depok City'
+};
+var RL=window.RL={lang:'id'};
+try{var saved=localStorage.getItem('rl-lang');if(saved==='en'||saved==='id')RL.lang=saved}catch(e){}
+window.L=function(s){return RL.lang==='en'&&Object.prototype.hasOwnProperty.call(EN,s)?EN[s]:s};
+var ATTRS=['alt','placeholder','aria-label'];
+function walk(root){
+  var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){var p=n.parentNode&&n.parentNode.nodeName;return p==='SCRIPT'||p==='STYLE'?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
+  var n;while((n=w.nextNode())){
+    if(n.__rlId===undefined){var t=n.nodeValue.trim();if(!t||!EN.hasOwnProperty(t))continue;n.__rlId=t;n.__rlRaw=n.nodeValue}
+    var tr=RL.lang==='en'?EN[n.__rlId]:n.__rlId;n.nodeValue=n.__rlRaw.replace(n.__rlId,tr);
+  }
+  [].forEach.call(root.querySelectorAll('[alt],[placeholder],[aria-label]'),function(el){ATTRS.forEach(function(a){
+    if(!el.hasAttribute(a))return;var k='rl'+a.replace('-','');
+    if(el.dataset[k]===undefined){var v=el.getAttribute(a);if(!EN.hasOwnProperty(v))return;el.dataset[k]=v}
+    el.setAttribute(a,L(el.dataset[k]));
+  })});
+}
+var STATIC=['header.nav','.hero','.marquee','.need','.about','.sizes .size-head','.sizes .size-visual','.sizes .slider-label','.sizes #sizeSlider','.sizes .size-tabs','.cat-head','.tabs','.disclaimer','.order-head','.order-body .empty','.order-body .total','.order-body .field','#sendWa','.order .fine','#clearOrder','#pesan','.kontak','footer','#imageZoom','.mbar .mbar-wa'];
+function setLang(lang){
+  RL.lang=lang;try{localStorage.setItem('rl-lang',lang)}catch(e){}
+  document.documentElement.lang=lang;
+  document.title=L('Rumah.Lobster | Bibit, Indukan & Lobster Air Tawar');
+  STATIC.forEach(function(sel){[].forEach.call(document.querySelectorAll(sel),walk)});
+  var ti=document.getElementById('tab-indukan');if(ti)ti.innerHTML=lang==='en'?'Broodstock<span class="long"> packs</span>':'<span class="long">Paket </span>Indukan';
+  [].forEach.call(document.querySelectorAll('.lang-switch button'),function(b){b.setAttribute('aria-pressed',b.dataset.lang===lang?'true':'false')});
+  [].forEach.call(document.querySelectorAll('a[href*="wa.me"]:not(#sendWa)'),function(a){a.href='https://wa.me/6285183134469?text='+encodeURIComponent(L('Halo Rumah.Lobster, saya mau tanya stok lobster.'))});
+  (RL.hooks||[]).forEach(function(f){try{f()}catch(e){}});
+}
+RL.setLang=setLang;RL.hooks=[];
+document.addEventListener('click',function(e){var b=e.target.closest('.lang-switch button');if(b)setLang(b.dataset.lang)});
+document.addEventListener('DOMContentLoaded',function(){setLang(RL.lang)});
+})();
+</script>
+
+<header class="nav"><div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="wrap">
+    <a href="#top" aria-label="Rumah.Lobster, kembali ke atas"><img class="logo" src="assets/5d190df0.webp" alt="Rumah.Lobster — Gudangnya Lobster Air Tawar"></a>
+    <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu <span>☰</span></button><nav id="mainNav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#ukuran">Panduan Ukuran</a></li>
+        <li><a href="#katalog">Katalog</a></li>
+        <li><a href="#pesan">Cara Pesan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right"><div class="lang-switch" role="group" aria-label="Bahasa / Language"><button type="button" data-lang="id" aria-pressed="true" lang="id">ID</button><button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button></div><a class="cart-pill" href="#pesanan">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      Pesanan <span class="count num" id="navCount">0</span>
+    </a></div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-bg" id="heroStage"><img id="heroImage" src="assets/2181654a.webp" alt="Lobster air tawar bercapit biru di dasar air jernih"></div>
+    
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="hero-eyebrow">RUMAH.LOBSTER / DEPOK</span><h1>Dari kecil.<br><em>Jadi pilihan.</em></h1>
+        
+        <p class="tag" id="heroCategory">Lobster air tawar, dari bibit hingga konsumsi.</p>
+        <p class="lead">Bibit, paket indukan, dan lobster konsumsi dari Depok. Pilih ukurannya, susun pesanan, lalu kirim langsung ke WhatsApp kami.</p>
+        <div class="cta">
+          <a class="btn btn-wa" href="#katalog">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+            Susun pesanan
+          </a>
+          <a class="btn btn-line" href="#ukuran">Panduan ukuran</a>
+        </div>
+        <div class="hero-switch" role="group" aria-label="Jelajahi pilihan lobster"><button type="button" class="active" aria-pressed="true" data-scene="hero">Semua</button><button type="button" aria-pressed="false" data-scene="bibit">Bibit</button><button type="button" aria-pressed="false" data-scene="indukan">Indukan</button><button type="button" aria-pressed="false" data-scene="konsumsi">Konsumsi</button></div><div class="from" aria-label="Harga mulai">
+          <div><span>Bibit mulai</span><strong class="num">Rp2.000</strong></div>
+          <div><span>Paket indukan</span><strong class="num">Rp100.000</strong></div>
+          <div><span>Konsumsi</span><strong class="num">Rp200.000/kg</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Bibit</span><span>Indukan</span><span>Konsumsi</span><span>Gudangnya Lobster Air Tawar</span><span>Kota Depok</span>
+      <span>Bibit</span><span>Indukan</span><span>Konsumsi</span><span>Gudangnya Lobster Air Tawar</span><span>Kota Depok</span>
+    </div>
+  </div>
+
+  <section class="need" aria-labelledby="needTitle">
+    <div class="wrap">
+      <div class="need-head">
+        <span class="kicker">Mulai dari kebutuhan</span>
+        <h2 id="needTitle">Mulai dari tujuan Anda.</h2>
+      </div>
+      <div class="need-grid">
+        <a class="need-card" href="#katalog" data-go="bibit">
+          <img src="assets/95ec260e.webp" alt="" loading="lazy">
+          <span class="need-k">Pemeliharaan</span>
+          <span class="need-t">Bibit</span>
+          <span class="need-d">2 cm, 3 cm, dan 2 inch. Mulai Rp2.000/ekor.</span>
+          <span class="need-go">Lihat bibit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="need-card" href="#katalog" data-go="indukan">
+          <img src="assets/2f759bb3.webp" alt="" loading="lazy">
+          <span class="need-k">Pengembangan budidaya</span>
+          <span class="need-t">Paket Indukan</span>
+          <span class="need-d">Komposisi jantan dan betina, 3 inch atau 4 inch. Mulai Rp100.000/paket.</span>
+          <span class="need-go">Lihat paket <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="need-card" href="#katalog" data-go="konsumsi">
+          <img src="assets/3de042eb.webp" alt="" loading="lazy">
+          <span class="need-k">Konsumsi</span>
+          <span class="need-t">Lobster Konsumsi</span>
+          <span class="need-d">Jantan 4 inch, Rp200.000/kg.</span>
+          <span class="need-go">Lihat konsumsi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="tentang">
+    <div class="wrap">
+      <div class="about-photo reveal">
+        <img src="assets/2f759bb3.webp" alt="Close-up lobster air tawar dengan capit biru berbintik" loading="lazy">
+        <div class="photo-caption">SATU TEMPAT. TIGA KEBUTUHAN.</div>
+      </div>
+      <div class="about-copy reveal">
+        <span class="kicker">Tentang kami</span>
+        <h2>Kenali dulu.<br><em>Pilih dengan tepat.</em></h2>
+        <p>Rumah.Lobster menyediakan lobster air tawar dalam pilihan bibit, paket indukan, dan ukuran konsumsi. Ragam produk disusun untuk membantu pelanggan memilih sesuai kebutuhan pemeliharaan, pengembangan budidaya, maupun konsumsi.</p>
+        <p>Melalui kanal media sosial dan marketplace, pelanggan dapat mengenal pilihan produk serta mengonfirmasi ukuran, komposisi paket, harga, dan ketersediaan sebelum memesan.</p>
+        <div class="visi">
+          <span class="label">VISI</span>
+          <blockquote>Menjadi pilihan tepercaya untuk kebutuhan lobster air tawar, dari bibit hingga konsumsi.</blockquote>
+          <ul class="misi" aria-label="Misi">
+            <li>Memudahkan pemilihan produk sesuai kebutuhan pelanggan.</li>
+            <li>Menyajikan informasi ukuran dan komposisi paket dengan jelas.</li>
+            <li>Mengembangkan akses pemesanan melalui kanal digital.</li>
+            <li>Membangun hubungan pelanggan melalui komunikasi yang terbuka.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sizes" id="ukuran">
+    <div class="wrap">
+      <div class="size-head">
+        <div>
+          <span class="kicker">Panduan ukuran</span>
+          <h2 style="margin-top:12px">Ukuran kecil.<br>Perbedaan besar.</h2>
+          <p class="sub">Bandingkan ukuran sebelum memilih.</p>
+        </div>
+        <p>Ukuran kami ditulis dalam cm dan inch. Pilih salah satu untuk melihat panjangnya pada penggaris, skala sebenarnya 1 inch = 2,54 cm.</p>
+      </div>
+      <div class="size-visual"><div class="size-guide"><span>ILUSTRASI PERBANDINGAN</span><strong id="visualSize">2 cm</strong></div><img id="sizeAnimal" src="assets/95ec260e.webp" alt="Ilustrasi ukuran lobster"><span class="size-end">Panjang tubuh ditampilkan secara relatif</span></div><label class="slider-label" for="sizeSlider">Geser untuk membandingkan ukuran <output id="sliderValue">2 cm</output></label><input id="sizeSlider" type="range" min="0" max="4" step="1" value="0" aria-label="Pilihan ukuran lobster"><div class="size-tabs" role="group" aria-label="Pilih ukuran" id="sizeTabs"></div>
+      <div class="ruler-box">
+        <div class="ruler" role="img" aria-label="Penggaris 0 sampai 12 cm" id="ruler">
+          <div class="bar num" id="rulerBar" style="width:16.7%">2 cm</div>
+          <div class="scale" aria-hidden="true"></div>
+          <div class="labels num" aria-hidden="true"><span style="left:calc(0 * 100% / 12)">0</span><span style="left:calc(1 * 100% / 12)">1</span><span style="left:calc(2 * 100% / 12)">2</span><span style="left:calc(3 * 100% / 12)">3</span><span style="left:calc(4 * 100% / 12)">4</span><span style="left:calc(5 * 100% / 12)">5</span><span style="left:calc(6 * 100% / 12)">6</span><span style="left:calc(7 * 100% / 12)">7</span><span style="left:calc(8 * 100% / 12)">8</span><span style="left:calc(9 * 100% / 12)">9</span><span style="left:calc(10 * 100% / 12)">10</span><span style="left:calc(11 * 100% / 12)">11</span><span style="left:calc(12 * 100% / 12)">12</span></div>
+        </div>
+      </div>
+      <div class="size-meta" aria-live="polite">
+        <span class="big num" id="sizeBig">2 cm</span>
+        <span class="cm num" id="sizeCm">≈ 0,79 inch</span>
+        <span class="use" id="sizeUse">Tersedia sebagai bibit, Rp2.000/ekor. <a href="#katalog">Lihat di katalog</a></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="katalog">
+    <div class="wrap">
+      <div class="cat-head">
+        <div>
+          <span class="kicker">Katalog</span>
+          <h2 style="margin-top:12px">Pilihan Anda.<br>Pesanan Anda.</h2>
+        </div>
+        <p class="note">Tambahkan produk, lalu kirim daftar pesanan ke WhatsApp. Harga mengacu pada katalog; stok dan ongkir kami konfirmasi lewat chat.</p>
+      </div>
+      <div class="cat-layout">
+        <div style="min-width:0">
+          <div class="tabs" role="tablist" aria-label="Kategori produk">
+            <button role="tab" id="tab-bibit" aria-controls="panel" aria-selected="true" data-cat="bibit">Bibit</button>
+            <button role="tab" id="tab-indukan" aria-controls="panel" aria-selected="false" data-cat="indukan"><span class="long">Paket </span>Indukan</button>
+            <button role="tab" id="tab-konsumsi" aria-controls="panel" aria-selected="false" data-cat="konsumsi">Konsumsi</button>
+          </div>
+          <div id="panel" role="tabpanel" aria-labelledby="tab-bibit">
+            <div class="panel-intro" id="panelIntro"></div>
+            <div class="grid" id="grid"></div>
+          </div>
+          <p class="disclaimer">Gambar produk merupakan ilustrasi. Ukuran, warna, dan jumlah mengikuti pilihan katalog. Bibit ukuran random.</p>
+        </div>
+
+        <aside class="order" id="pesanan" aria-label="Daftar pesanan">
+          <div class="order-head">
+            <div class="oh-row"><h3 id="orderTitle">Pesanan Anda</h3><button type="button" class="sheet-close" id="closeOrder" aria-label="Tutup daftar pesanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <p>Dikirim sebagai pesan WhatsApp ke 085183134469</p>
+          </div>
+          <div class="order-body">
+            <ul class="order-list" id="orderList"></ul>
+            <p class="empty" id="orderEmpty">Belum ada produk. Pilih dari katalog, lalu tekan <strong>Tambah</strong>.</p>
+            <div class="total"><span>Estimasi harga katalog</span><strong class="num" id="orderTotal">Rp0</strong></div>
+            <div class="field">
+              <label for="custName">Nama</label>
+              <input id="custName" type="text" autocomplete="name" placeholder="Nama Anda">
+            </div>
+            <div class="field">
+              <label for="custCity">Kota pengiriman</label>
+              <input id="custCity" type="text" autocomplete="address-level2" placeholder="Contoh: Bekasi">
+            </div>
+            <a class="btn btn-wa" id="sendWa" href="https://wa.me/6285183134469" target="_blank" rel="noopener" aria-disabled="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+              Kirim pesanan via WhatsApp
+            </a>
+            <p class="fine">Belum termasuk ongkos kirim. Harga, stok, dan pengiriman dikonfirmasi admin sebelum pembayaran.</p>
+            <button class="clear" type="button" id="clearOrder" hidden>Kosongkan pesanan</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="pesan">
+    <div class="wrap">
+      <span class="kicker">Cara memesan</span>
+      <h2 style="margin-top:12px">Tiga langkah pesan</h2>
+      <ol class="steps">
+        <li class="reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span><h3>Pilih produk</h3><p>Tentukan bibit, paket indukan, atau lobster konsumsi beserta ukurannya di katalog.</p></li>
+        <li class="reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 11.5l2.2 2.2 4.8-4.8"/></svg></span><h3>Konfirmasi</h3><p>Kirim daftar pesanan ke WhatsApp. Admin mengonfirmasi harga, stok, dan pengiriman.</p></li>
+        <li class="reveal"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 11h18M8 3h8l2 4H6l2-4z"/></svg></span><h3>Selesaikan pesanan</h3><p>Selesaikan pembayaran di Tokopedia atau Shopee pilihan Anda.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="kontak" id="kontak">
+    <div class="wrap">
+      <span class="kicker">Kontak</span>
+      <h2 style="margin-top:12px">Terhubung dengan Rumah.Lobster</h2>
+      <p class="sub">Kenali produknya. Pilih sesuai kebutuhan.</p>
+      <div class="kontak-grid">
+        <div>
+          <h3>Telepon &amp; WhatsApp</h3>
+          <div class="phone num" id="phone">085183134469</div>
+          <div class="phone-row">
+            <a class="btn btn-wa" href="https://wa.me/6285183134469?text=Halo%20Rumah.Lobster%2C%20saya%20mau%20tanya%20stok%20lobster." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+              Chat WhatsApp
+            </a>
+            <button class="btn btn-line" type="button" id="copyPhone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+              Salin nomor
+            </button>
+          </div>
+          <div class="addr">
+            Jl. H. Muhari No. 140B<br>Serua, Bojongsari<br>Kota Depok
+            <br><a href="https://www.google.com/maps/search/?api=1&query=Jl.+H.+Muhari+No.+140B+Serua+Bojongsari+Depok" target="_blank" rel="noopener">Buka di Google Maps →</a>
+          </div>
+        </div>
+        <div>
+          <h3>Media sosial</h3>
+          <ul class="channels">
+            <li><a href="https://instagram.com/rumah.lobster" target="_blank" rel="noopener"><img src="assets/59d20e80.webp" alt=""><span><span class="n">Instagram</span><span class="h">@rumah.lobster</span></span></a></li>
+            <li><a href="https://tiktok.com/@rumah_lobster" target="_blank" rel="noopener"><img src="assets/e75f01be.webp" alt=""><span><span class="n">TikTok</span><span class="h">@rumah_lobster</span></span></a></li>
+            <li><a href="https://facebook.com/profile.php?id=61593949502485" target="_blank" rel="noopener"><img src="assets/a68d79b0.webp" alt=""><span><span class="n">Facebook</span><span class="h">Rumah.Lobster</span></span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Marketplace</h3>
+          <ul class="channels">
+            <li><a href="https://tk.tokopedia.com/ZSbA5uYnp/" target="_blank" rel="noopener"><img src="assets/a0548dfa.webp" alt=""><span><span class="n">Tokopedia</span><span class="h">tk.tokopedia.com/ZSbA5uYnp</span></span></a></li>
+            <li><a href="https://id.shp.ee/8hMXNy6f" target="_blank" rel="noopener"><img src="assets/bbd91644.webp" alt=""><span><span class="n">Shopee</span><span class="h">id.shp.ee/8hMXNy6f</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="sig">Rumah.Lobster</span>
+    <span>Gudangnya Lobster Air Tawar · Bibit · Indukan · Konsumsi · Kota Depok</span>
+  </div>
+</footer>
+
+<div class="sheet-backdrop" id="backdrop" hidden></div>
+<div class="mbar" id="mbar">
+  <button type="button" class="mbar-order" id="openOrder" aria-controls="pesanan" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+    <span class="mbar-text"><strong id="mCount" class="num">Pesanan kosong</strong><span id="mTotal" class="num">Pilih produk di katalog</span></span>
+  </button>
+  <a class="mbar-wa" href="https://wa.me/6285183134469?text=Halo%20Rumah.Lobster%2C%20saya%20mau%20tanya%20stok%20lobster." target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span>Chat</span>
+  </a>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var WA='6285183134469';
+  var IMG={b2:'assets/95ec260e.webp',b3:'assets/95ec260e.webp',b5:'assets/95ec260e.webp',i3:'assets/2f759bb3.webp',i4:'assets/2f759bb3.webp',pair:'assets/2f759bb3.webp',bowl:'assets/3de042eb.webp'};
+  var P=[
+    {id:'b2',cat:'bibit',k:'Bibit · random',name:'2 cm',desc:'Bibit ukuran kecil untuk pemeliharaan dan pembesaran.',price:2000,unit:'ekor',step:10,img:IMG.b2},
+    {id:'b3',cat:'bibit',k:'Bibit · random',name:'3 cm',desc:'Bibit ukuran kecil, sedikit lebih besar.',price:3000,unit:'ekor',step:10,img:IMG.b3},
+    {id:'b5',cat:'bibit',k:'Bibit · random',name:'2 inch',desc:'Bibit ukuran 2 inch (± 5 cm).',price:5000,unit:'ekor',step:10,img:IMG.b5},
+    {id:'i3a',cat:'indukan',k:'Paket 3 inch',name:'5 ekor',desc:'1 jantan + 4 betina',price:100000,unit:'paket',step:1,img:IMG.i3},
+    {id:'i3b',cat:'indukan',k:'Paket 3 inch',name:'10 ekor',desc:'2 jantan + 8 betina',price:150000,unit:'paket',step:1,img:IMG.i3},
+    {id:'i4a',cat:'indukan',k:'Paket 4 inch',name:'5 ekor',desc:'1 jantan + 4 betina',price:150000,unit:'paket',step:1,img:IMG.i4},
+    {id:'i4b',cat:'indukan',k:'Paket 4 inch',name:'10 ekor',desc:'2 jantan + 8 betina',price:200000,unit:'paket',step:1,img:IMG.i4},
+    {id:'s4j',cat:'indukan',k:'Satuan 4 inch',name:'Jantan',desc:'Indukan satuan ukuran 4 inch.',price:35000,unit:'ekor',step:1,img:IMG.i4},
+    {id:'s4b',cat:'indukan',k:'Satuan 4 inch',name:'Betina',desc:'Indukan satuan ukuran 4 inch.',price:35000,unit:'ekor',step:1,img:IMG.i4},
+    {id:'k4',cat:'konsumsi',k:'Konsumsi · 4 inch',name:'Jantan',desc:'Lobster air tawar untuk kebutuhan konsumsi.',price:200000,unit:'kg',step:0.5,img:IMG.bowl}
+  ];
+  var INTRO={
+    bibit:{img:IMG.b5,text:'Bibit lobster air tawar ukuran kecil, dijual per ekor dengan ukuran random. Cocok untuk memulai pemeliharaan.'},
+    indukan:{img:IMG.pair,text:'Paket indukan dengan komposisi jantan dan betina, ukuran 3 inch atau 4 inch. Tersedia juga indukan satuan 4 inch.'},
+    konsumsi:{img:IMG.bowl,text:'Lobster jantan ukuran 4 inch untuk konsumsi, dijual per kilogram.'}
+  };
+  var byId={};P.forEach(function(p){byId[p.id]=p});
+  var cart={},draft={};
+  try{var s=JSON.parse(localStorage.getItem('rl-cart')||'{}');Object.keys(s).forEach(function(k){if(byId[k]&&s[k]>0)cart[k]=s[k]})}catch(e){}
+  function save(){try{localStorage.setItem('rl-cart',JSON.stringify(cart))}catch(e){}}
+  function rp(n){return 'Rp'+Math.round(n).toLocaleString('id-ID')}
+  function qtyText(p,q){return (p.unit==='kg'?(RL.lang==='en'?String(q):String(q).replace('.',',')):q)+' '+L(p.unit)}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function full(p){return (p.cat==='bibit'?(RL.lang==='en'?'Juvenile ':'Bibit ')+L(p.name):L(p.k)+' '+L(p.name)+(p.cat==='indukan'&&p.id.charAt(0)==='i'?' ('+L(p.desc)+')':''))}
+
+  var cat='bibit',grid=document.getElementById('grid'),intro=document.getElementById('panelIntro');
+  function renderGrid(){
+    intro.innerHTML='<img src="'+INTRO[cat].img+'" alt=""><p>'+esc(L(INTRO[cat].text))+'</p>';
+    grid.innerHTML=P.filter(function(p){return p.cat===cat}).map(function(p){
+      var d=draft[p.id]||p.step, inCart=cart[p.id]>0;
+      return '<article class="item'+(inCart?' in':'')+'" data-id="'+p.id+'">'+
+        '<img class="'+'cutout'+'" loading="lazy" src="'+p.img+'" alt="'+esc(L(p.k)+' '+L(p.name))+'">'+
+        '<div class="body"><span class="k">'+esc(L(p.k))+'</span><h3>'+esc(L(p.name))+'</h3><span class="d">'+esc(L(p.desc))+'</span>'+
+        '<div class="p num">'+rp(p.price)+' <small>/'+L(p.unit)+'</small></div></div>'+
+        '<div class="actions">'+
+        '<div class="stepper"><button type="button" data-act="dec" aria-label="'+L('Kurangi jumlah')+' '+esc(L(p.k)+' '+L(p.name))+'"'+(d<=p.step?' disabled':'')+'>−</button>'+
+        '<output class="num" aria-live="polite">'+qtyText(p,d)+'</output>'+
+        '<button type="button" data-act="inc" aria-label="'+L('Tambah jumlah')+' '+esc(L(p.k)+' '+L(p.name))+'">+</button></div>'+
+        '<button type="button" class="add" data-act="add">'+(inCart?'<span class="long">'+L('Tambah lagi · ')+'</span>✓ '+qtyText(p,cart[p.id])+'<span class="long">'+L(' di pesanan')+'</span>':L('Tambah')+'<span class="long">'+L(' ke pesanan')+'</span>')+'</button></div>'+
+      '</article>';
+    }).join('');
+  }
+  grid.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    var id=b.closest('.item').getAttribute('data-id'),p=byId[id],d=draft[id]||p.step,act=b.getAttribute('data-act');
+    if(act==='inc')draft[id]=+(d+p.step).toFixed(1);
+    if(act==='dec')draft[id]=Math.max(p.step,+(d-p.step).toFixed(1));
+    if(act==='add'){cart[id]=+((cart[id]||0)+d).toFixed(1);save();renderOrder();toast(qtyText(p,d)+' '+full(p)+' '+L('ditambahkan'))}
+    renderGrid();
+    var again=grid.querySelector('[data-id="'+id+'"] [data-act="'+act+'"]');if(again&&!again.disabled)again.focus();
+  });
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function selectTab(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1});cat=t.getAttribute('data-cat');document.getElementById('panel').setAttribute('aria-labelledby',t.id);renderGrid()}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){selectTab(t)});
+    t.addEventListener('keydown',function(e){var j=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:null;if(j===null)return;e.preventDefault();var n=tabs[(j+tabs.length)%tabs.length];n.focus();selectTab(n)});
+  });
+
+  var list=document.getElementById('orderList'),empty=document.getElementById('orderEmpty'),totalEl=document.getElementById('orderTotal'),
+      send=document.getElementById('sendWa'),clearBtn=document.getElementById('clearOrder'),nameIn=document.getElementById('custName'),cityIn=document.getElementById('custCity'),
+      mbar=document.getElementById('mbar');
+  function msg(){
+    var ids=Object.keys(cart),t=0,lines=[L('Halo Rumah.Lobster, saya mau pesan:'),''];
+    ids.forEach(function(id,i){var p=byId[id],q=cart[id],sub=p.price*q;t+=sub;lines.push((i+1)+'. '+full(p)+' — '+qtyText(p,q)+' × '+rp(p.price)+' = '+rp(sub))});
+    lines.push('',L('Estimasi total:')+' '+rp(t)+' '+L('(harga katalog, belum ongkir)'));
+    if(nameIn.value.trim())lines.push(L('Nama')+': '+nameIn.value.trim());
+    if(cityIn.value.trim())lines.push(L('Kirim ke:')+' '+cityIn.value.trim());
+    lines.push('',L('Mohon konfirmasi stok dan ongkos kirimnya. Terima kasih.'));
+    return lines.join('\n');
+  }
+  function renderOrder(){
+    var ids=Object.keys(cart),t=0,n=0;
+    list.innerHTML=ids.map(function(id){var p=byId[id],q=cart[id];t+=p.price*q;n++;
+      return '<li><span>'+esc(full(p))+'<br><span class="q num">'+qtyText(p,q)+' × '+rp(p.price)+'</span></span><strong class="num">'+rp(p.price*q)+'</strong>'+
+      '<button type="button" class="rm" data-id="'+id+'" aria-label="'+L('Hapus')+' '+esc(full(p))+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></li>'}).join('');
+    empty.hidden=n>0;clearBtn.hidden=n===0;
+    totalEl.textContent=rp(t);
+    document.getElementById('navCount').textContent=String(n);
+    document.getElementById('mCount').textContent=n?n+' '+L('produk di pesanan'):L('Pesanan kosong');
+    document.getElementById('mTotal').textContent=n?rp(t)+' · '+L('lihat & kirim'):L('Pilih produk di katalog');
+    mbar.classList.toggle('filled',n>0);
+    send.setAttribute('aria-disabled',n>0?'false':'true');
+    send.href='https://wa.me/'+WA+'?text='+encodeURIComponent(n?msg():L('Halo Rumah.Lobster'));
+  }
+  list.addEventListener('click',function(e){var b=e.target.closest('.rm');if(!b)return;delete cart[b.getAttribute('data-id')];save();renderOrder();renderGrid();toast(L('Produk dihapus dari pesanan'))});
+  clearBtn.addEventListener('click',function(){cart={};save();renderOrder();renderGrid();toast(L('Pesanan dikosongkan'))});
+  [nameIn,cityIn].forEach(function(i){i.addEventListener('input',renderOrder)});
+
+  // size ruler
+  var SZ=[
+    {label:'2 cm',cm:2,use:'Tersedia sebagai bibit, Rp2.000/ekor.'},
+    {label:'3 cm',cm:3,use:'Tersedia sebagai bibit, Rp3.000/ekor.'},
+    {label:'2 inch',cm:5.08,use:'Tersedia sebagai bibit, Rp5.000/ekor.'},
+    {label:'3 inch',cm:7.62,use:'Ukuran paket indukan, mulai Rp100.000/paket.'},
+    {label:'4 inch',cm:10.16,use:'Paket indukan, satuan Rp35.000/ekor, dan konsumsi Rp200.000/kg.'}
+  ];
+  var sTabs=document.getElementById('sizeTabs');
+  sTabs.innerHTML=SZ.map(function(s,i){return '<button type="button" aria-pressed="'+(i===0)+'" data-i="'+i+'">'+s.label+'</button>'}).join('');
+  var curSize=0;function pick(i){curSize=i;var s=SZ[i];
+    [].forEach.call(sTabs.children,function(b,j){b.setAttribute('aria-pressed',j===i)});
+    var bar=document.getElementById('rulerBar');bar.style.width=(s.cm/12*100)+'%';bar.textContent=s.label;
+    document.getElementById('ruler').setAttribute('aria-label',L('Penggaris:')+' '+s.label+' '+L('kira-kira')+' '+s.cm.toFixed(2)+' cm '+L('dari 12 cm'));
+    document.getElementById('sizeBig').textContent=s.label;
+    document.getElementById('sizeCm').textContent=(function(v){return RL.lang==='en'?v:v.replace('.',',')})(/inch/.test(s.label)?'≈ '+s.cm.toFixed(2)+' cm':'≈ '+(s.cm/2.54).toFixed(2)+' inch');
+    document.getElementById('sizeUse').innerHTML=esc(L(s.use))+' <a href="#katalog">'+L('Lihat di katalog')+'</a>';
+  }
+  sTabs.addEventListener('click',function(e){var b=e.target.closest('button');if(b)pick(+b.getAttribute('data-i'))});
+
+  // copy phone
+  var tEl=document.getElementById('toast'),tt;
+  function toast(m){tEl.textContent=m;tEl.hidden=false;clearTimeout(tt);tt=setTimeout(function(){tEl.hidden=true},2200)}
+  document.getElementById('copyPhone').addEventListener('click',function(){
+    function fb(){var r=document.createRange();r.selectNodeContents(document.getElementById('phone'));var s=getSelection();s.removeAllRanges();s.addRange(r);toast(L('Nomor terpilih, salin dari layar'))}
+    try{navigator.clipboard.writeText('085183134469').then(function(){toast(L('Nomor disalin'))},fb)}catch(e){fb()}
+  });
+
+
+  // need cards open the right tab
+  [].forEach.call(document.querySelectorAll('[data-go]'),function(a){a.addEventListener('click',function(){var t=document.getElementById('tab-'+a.getAttribute('data-go'));if(t)selectTab(t)})});
+  // bump the order indicators when something is added
+  function bump(){[document.getElementById('navCount'),document.getElementById('mbar')].forEach(function(el){el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump')})}
+  grid.addEventListener('click',function(e){var b=e.target.closest('[data-act=add]');if(b)bump()},true);
+  // highlight the nav link of the section in view
+  if('IntersectionObserver' in window){
+    var links={};[].forEach.call(document.querySelectorAll('.nav ul a'),function(a){links[a.getAttribute('href').slice(1)]=a});
+    var nio=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){Object.keys(links).forEach(function(k){links[k].classList.toggle('on',k===en.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(links).forEach(function(k){var el=document.getElementById(k);if(el)nio.observe(el)});
+  }
+  // mobile bottom sheet
+  var sheet=document.getElementById('pesanan'),bd=document.getElementById('backdrop'),openB=document.getElementById('openOrder'),closeB=document.getElementById('closeOrder');
+  var mq=matchMedia('(max-width: 1000px)');
+  function openSheet(){if(!mq.matches){sheet.scrollIntoView({behavior:'smooth',block:'start'});return}sheet.classList.add('open');bd.hidden=false;openB.setAttribute('aria-expanded','true');document.body.classList.add('lock');setTimeout(function(){closeB.focus()},50)}
+  function closeSheet(){sheet.classList.remove('open');bd.hidden=true;openB.setAttribute('aria-expanded','false');document.body.classList.remove('lock');openB.focus()}
+  openB.addEventListener('click',openSheet);closeB.addEventListener('click',closeSheet);bd.addEventListener('click',closeSheet);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&sheet.classList.contains('open'))closeSheet()});
+  [].forEach.call(document.querySelectorAll('a[href="#pesanan"]'),function(a){a.addEventListener('click',function(e){if(mq.matches){e.preventDefault();openSheet()}})});
+  mq.addEventListener&&mq.addEventListener('change',function(){if(!mq.matches&&sheet.classList.contains('open'))closeSheet()});
+  renderGrid();renderOrder();pick(0);
+  RL.hooks.push(function(){renderGrid();renderOrder();pick(curSize)});
+})();
+</script>
+
+
+<dialog class="zoom-dialog" id="imageZoom" aria-label="Detail gambar lobster"><button class="zoom-close" id="zoomClose" aria-label="Tutup detail gambar">×</button><img id="zoomImage" alt=""><div class="zoom-caption" id="zoomCaption"></div></dialog>
+<script>
+(function(){
+ const assets={"hero": "assets/2181654a.webp", "bibit": "assets/95ec260e.webp", "indukan": "assets/2f759bb3.webp", "konsumsi": "assets/3de042eb.webp"};
+ const stage=document.getElementById('heroStage'), image=document.getElementById('heroImage');
+ const titles={hero:'Lobster air tawar, dari bibit hingga konsumsi.',bibit:'Bibit — awal kecil untuk pemeliharaan Anda.',indukan:'Indukan — pilihan untuk pengembangan budidaya.',konsumsi:'Konsumsi — lobster air tawar untuk kebutuhan Anda.'};
+ let timer,curScene='hero';RL.hooks.push(()=>{document.getElementById('heroCategory').textContent=L(titles[curScene]);image.alt=L(titles[curScene]);document.querySelectorAll('.item img,.about-photo img').forEach(x=>x.setAttribute('aria-label',L('Perbesar gambar')+' '+x.alt))});
+ document.querySelectorAll('[data-scene]').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('[data-scene]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',x===b?'true':'false')});
+  stage.classList.add('swapping');clearTimeout(timer);timer=setTimeout(()=>{image.src=assets[b.dataset.scene];curScene=b.dataset.scene;image.alt=L(titles[curScene]);document.getElementById('heroCategory').textContent=L(titles[curScene]);stage.classList.remove('swapping')},180);
+ }));
+ const slider=document.getElementById('sizeSlider'),animal=document.getElementById('sizeAnimal');
+ const labels=['2 cm','3 cm','2 inch','3 inch','4 inch'],lengths=[2,3,5.08,7.62,10.16];
+ function size(i){slider.value=i;animal.style.width=(85+lengths[i]*40)+'px';animal.src=assets[i<3?'bibit':'indukan'];document.getElementById('visualSize').textContent=labels[i];document.getElementById('sliderValue').textContent=labels[i];slider.setAttribute('aria-valuetext',labels[i]);}
+ slider.addEventListener('input',()=>{const i=+slider.value;document.querySelector('#sizeTabs [data-i="'+i+'"]').click()});
+ document.getElementById('sizeTabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b)size(+b.dataset.i)});size(0);
+ const menu=document.getElementById('mainNav'),toggle=document.getElementById('menuToggle');
+ toggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false')});menu.addEventListener('click',e=>{if(e.target.closest('a')){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false')}});
+ const dialog=document.getElementById('imageZoom');let prior;
+ document.addEventListener('click',e=>{const img=e.target.closest('.item img,.about-photo img');if(!img)return;prior=img;document.getElementById('zoomImage').src=img.src;document.getElementById('zoomImage').alt=img.alt;document.getElementById('zoomCaption').textContent=img.alt+' · '+L('Ilustrasi produk');dialog.showModal()});
+ document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.item img,.about-photo img')){e.preventDefault();e.target.click()}});
+ const observer=new MutationObserver(()=>{document.querySelectorAll('.item img,.about-photo img').forEach(x=>{x.tabIndex=0;x.setAttribute('role','button');x.setAttribute('aria-label',L('Perbesar gambar')+' '+x.alt)})});observer.observe(document.getElementById('grid'),{childList:true});document.querySelectorAll('.item img,.about-photo img').forEach(x=>{x.tabIndex=0;x.setAttribute('role','button');x.setAttribute('aria-label',L('Perbesar gambar')+' '+x.alt)});
+ document.getElementById('zoomClose').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const rect=dialog.getBoundingClientRect();if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)dialog.close()}});dialog.addEventListener('close',()=>prior&&prior.focus());
+ function progress(){const total=document.documentElement.scrollHeight-innerHeight;document.getElementById('scrollProgress').style.width=(total>0?scrollY/total*100:0)+'%'}addEventListener('scroll',progress,{passive:true});addEventListener('resize',progress);progress();
+})();
+</script>
+</body></html>
